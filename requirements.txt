@@ -1,0 +1,16 @@
+# 67 PROJECTS - DEPENDENCIES
+# install with: pip install -r requirements.txt
+
+# computer vision & gesture detection
+opencv-python>=4.8.0
+mediapipe>=0.10.0
+
+# image processing
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# audio playback
+pygame>=2.5.0
+
+# optional: performance monitoring
+# psutil>=5.9.0
