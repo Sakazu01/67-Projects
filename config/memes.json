@@ -1,0 +1,117 @@
+{
+  "version": "1.0",
+  "description": "67 Projects meme definitions - the sacred texts",
+  "memes": [
+    {
+      "name": "sigma_stare",
+      "description": "the ultimate power move. hold still and stare.",
+      "triggers": {
+        "conditions": {
+          "face_stillness": {">": 0.7}
+        }
+      },
+      "image": "sigma_stare.png",
+      "sound": "sigma.mp3",
+      "position": "bottom-right",
+      "scale": 0.3,
+      "opacity": 0.9
+    },
+    {
+      "name": "peace_sign",
+      "description": "throw up the peace sign ✌️",
+      "triggers": {
+        "gesture": "peace_sign"
+      },
+      "image": "peace_sign.png",
+      "sound": "vine_boom.mp3",
+      "position": "top-right",
+      "scale": 0.25,
+      "opacity": 0.85
+    },
+    {
+      "name": "skibidi_salute",
+      "description": "salute for the skibidi army",
+      "triggers": {
+        "gesture": "salute"
+      },
+      "image": "skibidi_salute.gif",
+      "sound": "skibidi.mp3",
+      "position": "center",
+      "scale": 0.4,
+      "opacity": 0.8
+    },
+    {
+      "name": "tpose_dominance",
+      "description": "assert dominance with the T-pose",
+      "triggers": {
+        "gesture": "tpose"
+      },
+      "image": "tpose.png",
+      "sound": "vine_boom.mp3",
+      "position": "center",
+      "scale": 0.5,
+      "opacity": 0.7
+    },
+    {
+      "name": "pointing_moment",
+      "description": "point at something important",
+      "triggers": {
+        "gesture": "pointing"
+      },
+      "image": "pointing.png",
+      "sound": null,
+      "position": "top-left",
+      "scale": 0.2,
+      "opacity": 0.9
+    },
+    {
+      "name": "open_palm_vibes",
+      "description": "show your hand to the camera",
+      "triggers": {
+        "any_of": ["open_palm_left", "open_palm_right"]
+      },
+      "image": "open_palm.png",
+      "sound": null,
+      "position": "bottom-center",
+      "scale": 0.3,
+      "opacity": 0.8
+    },
+    {
+      "name": "arms_crossed_boss",
+      "description": "cross your arms like a boss",
+      "triggers": {
+        "gesture": "arms_crossed"
+      },
+      "image": "arms_crossed.png",
+      "sound": "sigma.mp3",
+      "position": "bottom-left",
+      "scale": 0.35,
+      "opacity": 0.85
+    },
+    {
+      "name": "double_hand_raise",
+      "description": "both hands up in the air",
+      "triggers": {
+        "gestures": ["hand_raised_left", "hand_raised_right"]
+      },
+      "image": "double_hand.png",
+      "sound": "vine_boom.mp3",
+      "position": "top-center",
+      "scale": 0.4,
+      "opacity": 0.8
+    }
+  ],
+  "notes": [
+    "Add your own memes by:",
+    "1. Adding meme image to assets/memes/",
+    "2. (optional) Adding sound to assets/sounds/",
+    "3. Defining trigger conditions here",
+    "4. Run the detector and let chaos unfold",
+    "",
+    "Trigger types:",
+    "- 'gesture': single gesture match",
+    "- 'gestures': all gestures must match (AND)",
+    "- 'any_of': any gesture matches (OR)",
+    "- 'conditions': complex conditions with thresholds"
+  ]
+}
